@@ -1,5 +1,7 @@
+library(dplyr)
 library(here)
 library(patchwork)
+library(ggplot2)
 
 
 state_cols <- c('#1979a9', '#fed976', '#e07b39', 'black')
@@ -11,7 +13,7 @@ state_cols <- c('#1979a9', '#fed976', '#e07b39', 'black')
 #Load data and set parameters
 p_length <- 5
 L <- 64
-portraits_data <- here::here('R/data/landscape-portraits-10MAR25.rds')%>%
+portraits_data <- here::here('data/landscape-portraits-10MAR25.rds')%>%
   readRDS()%>%
   bind_rows(.id = 'ID')
 
