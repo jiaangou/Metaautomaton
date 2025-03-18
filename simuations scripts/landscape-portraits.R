@@ -78,13 +78,6 @@ stopCluster(cl)
 saveRDS(sim_out, file = 'landscape-portraits-10MAR25.rds')
 
 
-####################################
-#Visualize
-###################################
-
-
-
-
 
 
 
